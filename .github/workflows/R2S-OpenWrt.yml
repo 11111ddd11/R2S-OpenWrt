@@ -3,7 +3,7 @@ name: R2S-OpenWrt
 on:
   push:
     branches: 
-      - master
+      - main
     paths:
       - '.github/workflows/R2S-OpenWrt.yml'
       - 'SEED/config.seed'
