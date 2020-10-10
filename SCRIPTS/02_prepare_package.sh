@@ -1,9 +1,8 @@
 #!/bin/bash
 clear
-#Kernel
-wget -O- https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/3277.patch | patch -p1
-wget -O- https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/3178.patch | patch -p1
-#wget -O- https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/3399.patch | patch -p1
+#blocktrron.git 
+patch -p1 < ../PATCH/new/main/exp/uboot-rockchip-update-to-v2020.10-rc5.patch
+patch -p1 < ../PATCH/new/main/exp/rockchip-fix-NanoPi-R2S-GMAC-clock-name.patch
 notExce(){
 #RT Kernel
 cp -f ../PATCH/new/main/999-patch-5.4.61-rt37.patch ./target/linux/generic/hack-5.4/999-patch-5.4.61-rt37.patch
@@ -315,6 +314,9 @@ CONFIG_CRYPTO_SIMD=y
 # CONFIG_CRYPTO_SM3_ARM64_CE is not set
 # CONFIG_CRYPTO_SM4_ARM64_CE is not set
 ' >> ./target/linux/rockchip/armv8/config-5.4
+
+#let trojan prefer chacha20(vssr,passwall,ssrp
+patch -p1 < ../PATCH/new/main/chacha.patch
 
 #disable-rk3328-eth-offloading
 #wget -P target/linux/rockchip/armv8/base-files/etc/hotplug.d/iface https://raw.githubusercontent.com/friendlyarm/friendlywrt/master-v19.07.1/target/linux/rockchip-rk3328/base-files/etc/hotplug.d/iface/12-disable-rk3328-eth-offloading
