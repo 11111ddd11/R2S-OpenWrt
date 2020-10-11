@@ -233,7 +233,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree 
 #svn co https://github.com/openwrt/openwrt/branches/openwrt-19.07/package/network/utils/iputils package/network/utils/iputils
 #SmartDNS
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt package/new/smartdns
-git clone -b lede --single-branch https://github.com/pymumu/luci-app-smartdns package/new/luci-app-smartdns
+svn co https://github.com/project-openwrt/openwrt/branches/openwrt-18.06/package/ntlf9t/luci-app-smartdns package/new/smartdns/luci-app-smartdns
+#git clone -b lede --single-branch https://github.com/pymumu/luci-app-smartdns package/new/luci-app-smartdns
 #上网APP过滤
 #git clone -b master --single-branch https://github.com/destan19/OpenAppFilter package/new/OpenAppFilter
 #Docker
