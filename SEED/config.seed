@@ -46,9 +46,9 @@ CONFIG_PACKAGE_cgi-io=y
 CONFIG_PACKAGE_coremark=y
 CONFIG_PACKAGE_ethtool=y
 #CONFIG_PACKAGE_AdGuardHome=y
-# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
-# CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4 is not set
-# CONFIG_PACKAGE_ddns-scripts_dnspod is not set
+CONFIG_PACKAGE_ddns-scripts_aliyun=y
+CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4=y
+CONFIG_PACKAGE_ddns-scripts_dnspod=y
 CONFIG_PACKAGE_diffutils=y
 # CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-full=y
@@ -86,8 +86,8 @@ CONFIG_PACKAGE_luci-app-arpbind=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
 #CONFIG_PACKAGE_luci-app-beardropper=y
 #CONFIG_PACKAGE_luci-app-chinadns-ng=y
-CONFIG_PACKAGE_luci-app-cpufreq=y
-#CONFIG_PACKAGE_luci-app-ddns=y
+#CONFIG_PACKAGE_luci-app-cpufreq=y
+CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-firewall=y
 #CONFIG_PACKAGE_luci-app-cpulimit=y
 CONFIG_PACKAGE_luci-app-jd-dailybonus=y
